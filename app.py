@@ -12,6 +12,7 @@ def get_audio():
     ydl_opts = {
         'format': 'bestaudio/best',
         'geturl': True,
+        'cookiefile': 'cookies.txt'  # Odkazuje na cookies.txt v projektu
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         try:
